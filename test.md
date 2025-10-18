@@ -7,6 +7,23 @@
 
 ### **1. Linear Search**
 Write a function to find the position of element 25 in the list `[10, 5, 25, 30, 15]`. If not found, return -1.
+## Answer:
+```python
+def lin_search(arr,item):
+    for i in range(len(arr)):
+        if arr[i]==item:
+            flag=True
+            break
+        else:
+            flag=False
+    if flag==True:
+        return 'found'
+    else:
+        return -1
+            
+
+print(lin_search([10, 5, 25, 30, 15],100))
+```
 
 ### **2. Binary Search**
 Given a sorted list `[2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]`, write a binary search function to find element 23. Show all steps.
