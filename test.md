@@ -52,6 +52,15 @@ Explain the difference between linear search and binary search. When would you u
 ### **4. Search Implementation**
 Write a function that searches for all occurrences of number 5 in `[5, 2, 5, 8, 5, 1]` and returns their indices.
 
+```python
+pos=[]
+arr=[5, 2, 5, 8, 5, 1]
+for i in range(len(arr)):
+    if arr[i]==5:
+        pos.append(i)
+print(pos)
+```
+
 ---
 
 ## **SORTING (Questions 5-8)**
