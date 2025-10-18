@@ -130,6 +130,41 @@ Perform the following operations on an empty stack and show the stack after each
 - Peek
 - Pop
 
+  ## Answer
+  ```python
+  stack=[]
+    top=-1
+    def push(n):
+        global top, stack
+        stack.append(n)
+        top+=1
+        print(stack)
+    def pop():
+        global top, stack
+        if top == -1:
+            print('stack empty')
+        else:
+            pop_item=stack[top]
+            top-=1
+            stack= stack[:top+1]
+            print(stack)
+            
+    def peek():
+        global top, stack
+        if top == -1:
+            print('stack empty')
+        else:
+            print(stack[top])
+    
+    push(10)
+    push(20)
+    push(30)
+    pop()
+    push(40)
+    peek()
+    pop()
+```
+
 ### **14. Reverse String Using Stack**
 Write a function using stack to reverse the string "HELLO". Show how the stack changes at each step.
 
