@@ -202,6 +202,43 @@ Perform the following operations on an empty linear queue and show front, rear i
 - Dequeue
 - Display queue
 
+## Answer
+```python
+size = 6
+queue=[None]*size
+rear=-1
+front=0
+def enqueue(n):
+    global rear,size,queue
+    if rear==(size-1):
+        print('queue pverflow!')
+    else:
+        rear+=1
+        queue[rear]=n
+        print(queue)
+def deque():
+    global rear,front,size,queue
+    if front>rear:
+        print('queue is empty!')
+    else:
+        for i in range(front,rear):
+            queue[i]=queue[i+1]
+        queue[rear]=None
+        rear-=1
+        print(queue)
+
+def display():
+    global queue
+    print(queue)
+
+enqueue(5)
+enqueue(10)
+enqueue(15)
+deque()
+display()
+
+```
+
 ### **17. Circular Queue**
 Given a circular queue of size 5, perform these operations and show the queue state:
 - Enqueue 10, 20, 30, 40
