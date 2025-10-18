@@ -51,7 +51,7 @@ Explain the difference between linear search and binary search. When would you u
 
 ### **4. Search Implementation**
 Write a function that searches for all occurrences of number 5 in `[5, 2, 5, 8, 5, 1]` and returns their indices.
-
+## Answer
 ```python
 pos=[]
 arr=[5, 2, 5, 8, 5, 1]
@@ -67,6 +67,22 @@ print(pos)
 
 ### **5. Bubble Sort**
 Sort the array `[64, 34, 25, 12, 22, 11, 90]` using bubble sort. Show each pass clearly.
+## Answer
+```python
+#Sort the array [64, 34, 25, 12, 22, 11, 90] using bubble sort. Show each pass clearly.
+
+arr=[64, 34, 25, 12, 22, 11, 90]
+n=len(arr)
+for i in range(n):
+    flag=False
+    for j in range(n-1-i):
+        if arr[j]>arr[j+1]:
+            arr[j],arr[j+1]=arr[j+1],arr[j]
+            flag=True
+    if not flag:
+        break
+print(arr)
+```
 
 ### **6. Insertion Sort**
 Sort the array `[5, 2, 4, 6, 1, 3]` using insertion sort. Show how each element is inserted.
