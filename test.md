@@ -86,6 +86,21 @@ print(arr)
 
 ### **6. Insertion Sort**
 Sort the array `[5, 2, 4, 6, 1, 3]` using insertion sort. Show how each element is inserted.
+## Answer 
+```python
+#Sort the array [5, 2, 4, 6, 1, 3] using insertion sort. Show how each element is inserted.
+
+arr=[5, 2, 4, 6, 1, 3]
+for i in range(1,len(arr)):
+    key=arr[i]
+    j=i-1
+    while j>=0 and arr[j]>key:
+        arr[j+1]=arr[j]
+        j-=1
+    arr[j+1]=key
+
+print(arr)
+```
 
 ### **7. Sorting Comparison**
 Compare bubble sort and insertion sort:
