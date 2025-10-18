@@ -178,7 +178,7 @@ Perform the following operations on an empty stack and show the stack after each
     push(40)
     peek()
     pop()
-```
+  ```
 
 ### **14. Reverse String Using Stack**
 Write a function using stack to reverse the string "HELLO". Show how the stack changes at each step.
