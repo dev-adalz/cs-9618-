@@ -43,8 +43,6 @@ def b_search(arr,key):
         return 'found'
     else:
         return -1
-
-print(b_search([2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78],65))
 ```
 
 
