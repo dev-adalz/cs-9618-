@@ -20,13 +20,33 @@ def lin_search(arr,item):
         return 'found'
     else:
         return -1
-            
-
-print(lin_search([10, 5, 25, 30, 15],100))
 ```
 
 ### **2. Binary Search**
 Given a sorted list `[2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]`, write a binary search function to find element 23. Show all steps.
+## Answer:
+```python
+def b_search(arr,key):
+    left=0
+    right=len(arr)-1
+    while left<=right:
+        flag=False
+        mid = (left+right)//2
+        if key == arr[mid]:
+            flag=True
+            break
+        elif arr[mid]<key:
+            left=mid+1
+        else:
+            right=mid-1
+    if flag:
+        return 'found'
+    else:
+        return -1
+
+print(b_search([2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78],65))
+```
+
 
 ### **3. Compare Searching**
 Explain the difference between linear search and binary search. When would you use each? Give time complexity for both.
